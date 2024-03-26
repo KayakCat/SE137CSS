@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+    <!--HTML COMMENT-->
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Latoya Hall - Seeking Peace, Forest Adventures, and Following My Bliss</h1>
+    <div id= "nav">
+        <a href="#">Who Am I?</a>
+        <a href="#">Where I Have Learned</a>
+        <a href="#">The Fun Stuff</a>
+    </div>
+    
+    <div class="section">div 1</div>
+    <div class="section">div 2</div>
+    <div class="section">div 3</div>
+
+    <script>
+        var a = Array.from(document.querySelectorAll(`#nav a`));
+        var div = document.querySelectorAll(`.section`);
+        console.log(div)
+        
+        for(let i=0; i<a.length; i++)
+        {
+        a[i].addEventListener(`click`, handler);
+        }
+
+        function handler(e)
+        {
+            e.preventDefault(); 
+            console.log(e.target)
+            
+
+            for(let i=0; i<a.length; i++)
+            {
+              div[i].classList.add(`hide`); 
+            }
+
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+        }
+
+    </script>
+    
+</body>
+</html>
