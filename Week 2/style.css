@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+div{
+    color: purple;
+}
+
+.orange{
+    color:orange;
+}
+
+#bob{
+    color: red;
+}
+
+.orange b{
+    color: green;
+}
+
+a{
+    color: brown;
+}
+
+a:link{
+    color:brown;
+}
+
+a:visited{
+    color:blue;
+}
+
+a:hover{
+    color:blue;
+}
+
+a:active{
+    color: blueviolet;
+}
+/* you can put things together with the same color assignment*/
+/* a:visited, a:hover{}*/
+
+input[type="text"]
+
+{
+     background-color: aliceblue;
+}
+
+
+
