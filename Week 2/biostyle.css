@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.hide {
+  display: none;
+}
+
+h1{
+  color:rgb(48, 45, 49);
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+h2{
+  color:forestgreen;
+} 
+
+
+a:hover{
+  color:forestgreen;
+  padding:20px;
+  display: inline-block;
+}
+
