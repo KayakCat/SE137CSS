@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week 1</title>
-
-    <link rel="stylesheet" href="biostyle.css">
-  </head>
-  <body>
-    <h1>
-      Latoya Hall - Seeking Peace, Forest Adventures, and Following My Bliss
-    </h1>
-    <div id="nav">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="biostyle.css">
+</head>
+<body>
+  <header>
+    <h1>Latoya Hall - Seeking Peace, Forest Adventures, and Following My Bliss</h1>
+    <nav id="nav">
       <a href="#">About Me</a>
       <a href="#">Education</a>
       <a href="#">Hobbies</a>
-    </div>
-    <hr />
-    <section>
-        <div id="main">
-            <h2>About Latoya</h2>
-            <img src="images/me.jpg" alt="a picture of me" width="500px" />
-            <p>
-              I have arrived at a point in my <b>journey</b> where the only thing I am
-              seeking is peace. Everyday, every action that I take is lead by a very
-              strong desire to have more quiet and peaceful moments than chaos and
-              noise. I am an avid hiker and enjoy the yoga classes. My current
-              profession is a Chef. I find it to be too chaotic and rough on my body
-              so I have chosen to go back to school so that I can find a job that
-              allows me to rest my body more than being active. It's only fun to be
-              active now when it's something that brings me health benefits.
-            </p>
-            <hr />
-            <p>
-              I have two children. My son is 18 and works at Electric Boat and my
-              daughter is 17. She is very athletic playing volleyball and basketball.
-              Being a parent working full time and attending school full time is
-              probably the most chaotic thing ever, but I see an end goal here so it
-              keeps me going.
-            </p>
-            <hr />
-          </div>
-      
-          <div id="ed" class="hide">
-            <h2>Education</h2>
-            <ol>
-              <li>Mount Hope High School</li>
-              <li>Community College of RI</li>
-              <li>Johnson and Wales University</li>
-            </ol>
-            <img
-              src="images/mount%20hope.jpg"
-              alt="Mount Hope Highschool"
-              style="width: 500px"
-            />
-            <hr />
-          </div>
-      
-          <div id="hobbies" class="hide">
-            <h2>Hobbies</h2>
-            <ol>
-              <li>Hiking</li>
-              <li>Tarot and Metaphysical Studies</li>
-              <li>Difficult Baking Projects</li>
-            </ol>
-            <img
-              src="images/Hiking-Mount-Monadnock-1024x532.jpg"
-              alt="mount monadnock"
-              style="width: 500px"
-            />
-            <hr />
-          </div>
+    </nav>
+  </header>
+  <main>
+    <section id="main">
+      <h2>About Latoya</h2>
+      <img src="images/me.jpg" alt="A picture of me" width="500px" height="500px">
+      <img src="images/kiddos.jpg" alt="A picture of two small children" width="500px" height="500px">
+      <p>
+        I have arrived at a point in my <b>journey</b> where the only thing I am
+        seeking is peace. Everyday, every action that I take is lead by a very
+        strong desire to have more quiet and peaceful moments than chaos and
+        noise. I am an avid hiker and enjoy the yoga classes. My current
+        profession is a Chef. I find it to be too chaotic and rough on my body
+        so I have chosen to go back to school so that I can find a job that
+        allows me to rest my body more than being active. It's only fun to be
+        active now when it's something that brings me health benefits.
+      </p>
+     
+      <p>
+        I have two children. My son is 18 and works at Electric Boat and my
+        daughter is 17. She is very athletic playing volleyball and basketball.
+        Being a parent working full time and attending school full time is
+        probably the most chaotic thing ever, but I see an end goal here so it
+        keeps me going.
+      </p>
     </section>
+    <section id="ed" class="hide">
+      <h2>Education</h2>
+      <ol>
+        <li>Mount Hope High School</li>
+        <li>Community College of RI</li>
+        <li>Johnson and Wales University</li>
+      </ol>
+      <img src="images/mount%20hope.jpg" alt="Mount Hope Highschool" style="width: 500px">
+    </section>
+    <section id="hobbies" class="hide">
+      <h2>Hobbies</h2>
+      <ol>
+        <li>Hiking</li>
+        <li>Tarot and Metaphysical Studies</li>
+        <li>Difficult Baking Projects</li>
+      </ol>
+      <img src="images/Hiking-Mount-Monadnock-1024x532.jpg" alt="Mount Monadnock" style="width: 500px">
+    </section>
+  </main>
+  <footer>
     <div id="footer">©2024 Latoya Hall | W1 Assignment</div>
+  </footer>
 
     <script>
       var links = Array.from(document.querySelectorAll(`#nav a`));
-      var sections = document.querySelectorAll(`section > div`);
+      var sections = document.querySelectorAll(`section[id="main"], section[id="ed"], section[id="hobbies"]`);
 
       for (let i = 0; i < links.length; i++) {
         links[i].addEventListener(`click`, handler);

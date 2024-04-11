@@ -1,0 +1,55 @@
+@charset "UTF-8"
+html{
+
+}
+body{
+    margin: 0;
+}
+main{
+    position: relative;
+    margin:auto;
+    width: 826px;
+}
+header{
+    height: auto;
+    background-color: blueviolet;
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 4px 43 4px 43;
+}
+h1{
+    font-family:  "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 40;
+    margin: 0;
+    text-align: center;
+}
+nav{
+    padding:10px;
+    background-color: white;
+    border-radius:10px;
+    margin-left:20px;
+    display:inline-block;
+}
+section{
+display grid:grid;
+grid-template-areas:
+"farts farts"
+"img text";
+}
+sectionh2{
+
+}
+sectionimg{
+
+}
+sectionp{
+grid-area: text;
+margin-left: 28px;
+margin-top: 0;
+}
+footer{
+
+}

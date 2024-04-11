@@ -3,22 +3,54 @@
   display: none;
 }
 
-h1{
-  color:rgb(48, 45, 49);
+/* Fonts */
+body {
+  font-family: 'Roboto', sans-serif; 
 }
 
-body{
-  background-color: whitesmoke;
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif; 
 }
 
-h2{
-  color:forestgreen;
-} 
-
-
-a:hover{
-  color:forestgreen;
-  padding:20px;
-  display: inline-block;
+/* Colors */
+body {
+  color: #333; 
+  background-image: linear-gradient(180deg, rgb(188, 184, 184), #94bbe9 );
 }
 
+h1 {
+  color: #000;
+  text-align: center;
+}
+
+a:link, a:visited {
+  color: #007bff; 
+}
+
+a:hover {
+  color: #040404; 
+}
+
+
+.container {
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+
+section {
+  border-bottom: 1px solid #ccc; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  border-top: 1px solid #ccc;
+}
+
+
+#nav {
+  text-align: center; 
+}
+
+#footer {
+  text-align: center; 
+  padding: 10px 0; 
+}
