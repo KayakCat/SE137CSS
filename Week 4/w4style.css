@@ -1,0 +1,20 @@
+@charset "UTF-8";
+html{
+    height: 100%;}
+body{
+    height: 100%;margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: yellow;
+    border: 2px solid black;
+    padding:20px;
+    height: 50%;
+    
+}
+div{background-color: red;
+    height: 200px;
+    border: 2px solid black;
+}
