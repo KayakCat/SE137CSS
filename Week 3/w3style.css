@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 header {
-    background: linear-gradient(to top, #a4c6b8, #C4A7C3);
-    grid-area: h;
+    grid: h;
     text-align: center;
-    padding: 10px;
-    margin-left: 11px;
-    margin-right: 11px;
+    box-sizing: border-box;
+    position: fixed;
+    margin-left: 110px;
+
 
 
 }
@@ -28,7 +28,7 @@ main {
     grid-template-areas: 
         "h h h h h h"
         "a a a a a a"
-        "l l b b s s"
+        "l l l l s s"
         "f f f f f f";
     box-sizing: border-box;
     min-height: 100vh; 
@@ -45,23 +45,29 @@ main {
 }
 #about {
     grid-area: a;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-   
+    
 
 }
 
 #hobbies {
     grid-area: l;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-   
+    background-image: url("images/Hiking-Mount-Monadnock-1024x532.jpg"); /* Replace "your-image.jpg" with the path to your image */
+    background-size: cover;
+    background-position: center;
+
+    
 }
 
+ul{
+    background-color: rgba(0,0,0,.75);
+    width: 35%;
+    color: white;
+    padding: 4px;
+    margin-left: 15px;
+}
 #education {
     grid-area: s;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    
    
 }
 
@@ -69,16 +75,6 @@ p {
     margin: 35px;
 }
 
-#image {
-    display: grid;
-    grid-template-columns: auto;
-    grid-area: b;
-    background-image: url("Hiking-Mount-Monadnock-1024x532.jpg"); /* Replace "your-image.jpg" with the path to your image */
-    background-size: cover;
-    background-position: center;
-    
-}
-    
 
 
 nav {
@@ -95,6 +91,7 @@ footer {
 }
 
 section {
-    background-color: none;
+    background-color: #A4C6B8;
+    margin: 2px;
     grid-area: s;
 }
