@@ -10,7 +10,7 @@ main{
     height: 100%;
     display: flex;
     padding: 20px;
-    box-sizing: border-box;/* so padding doesn't make it bigger when scrolling*/
+    box-sizing: border-box;
     background: yellow;
 }
 div{
@@ -65,3 +65,4 @@ div:nth-child(1) span{
         
     }
 }
+

@@ -1,18 +1,88 @@
-html, body{
-    margin:0;
-    height:100vh;
+
+
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
-body{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+
+h1 {
+    font-size: 1.5em; 
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
 }
-table{
-    width:80%;
+
+table {
+    width: 100%;
     border-collapse: collapse;
+    margin: 20px 0;
 }
- td{
-    border-bottom:1px solid black;
+
+thead {
+    background-color: #333;
+    color: #fff; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
 }
 
 
+@media (max-width: 1920px) {
+    h1 {
+        font-size: 1.5em; 
+    }
+    
+    th, td {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    th, td {
+        font-size: 1em; 
+    }
+
+   
+    th:nth-child(3)::after { content: ' (S1)'; }
+    th:nth-child(4)::after { content: ' (S2)'; }
+    th:nth-child(5)::after { content: ' (S3)'; }
+    th:nth-child(6)::after { content: ' (S4)'; }
+    th:nth-child(7)::after { content: ' (S5)'; }
+    th:nth-child(8)::after { content: ' (S6)'; }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2em; 
+    }
+
+    th {
+        font-size: 1.5em; 
+    }
+
+    td {
+        font-size: 1.25em; 
+    }
+
+    
+    .stat {
+        display: none;
+    }
+}
