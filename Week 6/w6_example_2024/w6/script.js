@@ -1,3 +1,4 @@
+
 //reference to the button that opens and closes the tray
 var trayButton = document.querySelector(`aside button:first-child`)
 

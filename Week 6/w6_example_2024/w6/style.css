@@ -2,20 +2,66 @@
 
 html{
     height:100%;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
 }
 body{
-    height:100%;
+    height: 100%;
     margin:0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+
 }
 main{
-    height:100vh;
+    height: 100vh;
     background-color:black;
     display:flex;
     flex-direction: column;
+   
 }
-header{
-    height:23px;
-    background-color:#505050;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: grey;
+    padding: 0 25px;
+    height: 34px;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav .midlink {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Roboto;   
+     
+}
+
+nav{
+    height:34px;
+    display:flex; 
+    text-decoration: none;
+    
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+
+header svg {
+    color: white;
 }
 section{
     background-color:lime;
@@ -25,6 +71,44 @@ section{
 aside{
     background-color:#505050;
     width:45px;
+}
+aside div{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+aside div:last-child{
+    margin-top: 630px;
+    
+}
+
+
+aside button {
+    width: 26px; 
+    height: 32px; 
+    background-color: rgba(43, 43, 43, 0); 
+    border: none;
+    cursor: pointer;
+}
+
+
+ 
+aside button.active {
+    background-color: #333; 
+    color: #fff; 
+}
+summary{
+    display: flex;
+}
+.feather-inbox{
+    color: lightgrey;
+}
+.feather-square{
+    color:lightgray;
+}
+.feather-trash-2{
+    color:lightgray;
 }
 .tray{
     width:144px;
@@ -39,18 +123,37 @@ aside{
   
 }
 .file {
-    display: flex; /* Ensure each link is displayed as a block-level element */
+    display: flex; 
     align-items: flex-start;
     text-decoration: none;
-    color: #fff;
+    color: lightgrey;
     
+}
+.file:hover{
+    filter: brightness(1.5);
+}
+.stuff {
+    display: flex; 
+    align-items: flex-start;
+    text-decoration: none;
+    color: lightgray;
+    
+}
+.stuff:hover{
+    filter: brightness(1.5);
 }
 div.tray div{
     min-width:144px;
     box-sizing: border-box;
-    
-    /*border:5px solid cyan;*/
+       
 }
+
+
+.tray details summary h1 {
+    border-top:1px solid lightgray;
+    border-bottom:1px solid lightgray; ;
+}
+
 .hide{
     width:0;
     min-width:0;
@@ -62,45 +165,81 @@ div.tray div{
     display:flex;
     flex-direction: column;
 }
-header nav .links{
-    
-    color:white;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    margin-left: 40px;
-    font-size: 12px;
-    font-weight: 400px;
-    font-family: Roboto;
+.active{
+    justify-content: center;
+    background-color: #060606;
 }
-header nav .midlink{
-    margin-left: 420px;
-    text-decoration: none;
-    color:white;
+
+button:hover {
+    color: #ffffff;
 }
-nav{
-    height:34px;
-    display:flex;
-   
+
+button.active {
+    background-color: #161616;
+    color: #ffffff;
 }
+
 button{
     width:173px;
-    background-color:#c2c2c2;
+    background-color:rgb(55,55,55);
     border-radius: 0;
-    border:0 solid #161616;
+    border: 0 solid #161616;
     margin-right:2px;
+    color:rgb(194,194,194)
+    
     
 }
 button.active{
     background-color:#161616;
 }
+
 button:last-child{
     margin:0;
+    padding-bottom: 20px;
 }
+
+
+
+.feather-x{
+    align-items: center;
+    margin-left: 80px;
+    padding-top: 5px;
+    
+}
+.feather-navigation{
+    padding-bottom: 10px;
+    margin-left: 0;
+}
+
+
+
 #breadcrumbs{
     height:23px;
     background-color:#161616;
+    display: flex;
+    gap: 10px;
+    padding:10px;
+    cursor: pointer;
+    margin:0;
 }
+.breadcrumbs{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color:rgb(22,22,22);
+
+}
+
+.breadcrumbs > p {
+    margin: 0;
+    color: rgb(0,88,169);
+    cursor: pointer;
+}
+
+.breadcrumbs > span {
+    color: white;
+}
+
 textarea{
     box-sizing: border-box;
     width:100%;
@@ -108,12 +247,49 @@ textarea{
     background-color:#060606;
     border:0 solid #060606;
     resize: none;
-    color:#ffffff;
     outline:none;
     overflow-y:auto;
 }
-footer{
-    height:16px;
-    background-color:#0254A0;
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0254A0;
+    padding: 0 30px;
+   
+   
+   
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+footer svg {
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 0px;
+
+}
+
+
+.branch, .wifi {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.branch p, .wifi p {
+    margin-left: 5px;
+    color: white;
+}
+
+.wifi {
+    align-items: flex-end;
+}
+
+.feather:hover {
+    filter: brightness(1.5);
 }
 
