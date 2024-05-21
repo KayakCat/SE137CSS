@@ -2,6 +2,7 @@
 //reference to the button that opens and closes the tray
 var trayButton = document.querySelector(`aside button:first-child`)
 
+console.log(trayButton)
 //opens and closes the tray when the button is clicked
 trayButton.addEventListener(`click`, toggle)
 function toggle(e)
@@ -28,6 +29,6 @@ function butts(e)
         buttons[i].classList.remove(`active`);
     }
     e.target.classList.add(`active`)
-    document.querySelector(`#breadcrumbs`).innerHTML= `<a href="#">${e.target.innerText}</a>`
+    document.querySelector(`#active-tab`).innerHTML= e.target.innerText
 }
 
