@@ -1,17 +1,20 @@
 
-
+html {
+    height: 100%;
+    font-size: 16px;
+}
 
 body {
     font-family: Arial, sans-serif; 
-    background-color: #f0f0f0;
+    background-color: whitesmoke;
     margin: 0;
-    padding: 0;
+    height: 100%;
 }
 
 h1 {
     font-size: 1.5em; 
     text-align: center;
-    margin: 20px 0;
+    margin: 20px;
     color: #333;
 }
 
@@ -21,22 +24,30 @@ table {
     margin: 20px 0;
 }
 
-thead {
-    background-color: #333;
-    color: #fff; 
-}
 
 th, td {
     padding: 10px;
     text-align: left;
+    border: 1px solid lightgray;
+    font-size: 1em;
+}
+
+thead tr.full-names th, thead tr.full-names td {
+    background-color: black; 
+    color: white; 
+}
+
+thead tr.abbreviated-names th, thead tr.abbreviated-names td {
+    background-color: palevioletred; 
+    color: black; 
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #e9e9e9;
+    background-color: whitesmoke;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #fff;
+    background-color: white;
 }
 
 
@@ -44,9 +55,14 @@ tbody tr:nth-child(even) {
     h1 {
         font-size: 1.5em; 
     }
-    
     th, td {
-        font-size: 1em;
+        font-size: 1em; 
+    }
+    thead tr.full-names {
+        display: table-row;
+    }
+    thead tr.abbreviated-names {
+        display: none;
     }
 }
 
@@ -54,35 +70,31 @@ tbody tr:nth-child(even) {
     h1 {
         font-size: 1.5em; 
     }
-
     th, td {
         font-size: 1em; 
+        padding: 10px;
+        border: 1px solid lightgrey;
+    }
+    thead tr.full-names {
+        display: none;
+    }
+    thead tr.abbreviated-names {
+        display: table-row;
     }
 
-   
-    th:nth-child(3)::after { content: ' (S1)'; }
-    th:nth-child(4)::after { content: ' (S2)'; }
-    th:nth-child(5)::after { content: ' (S3)'; }
-    th:nth-child(6)::after { content: ' (S4)'; }
-    th:nth-child(7)::after { content: ' (S5)'; }
-    th:nth-child(8)::after { content: ' (S6)'; }
 }
 
 @media (max-width: 500px) {
     h1 {
         font-size: 2em; 
     }
-
-    th {
-        font-size: 1.5em; 
-    }
-
-    td {
+    th, td {
         font-size: 1.25em; 
     }
-
-    
-    .stat {
+    thead tr.full-names, thead tr.abbreviated-names {
+        display: none;
+    }
+    tbody .stat {
         display: none;
     }
 }
