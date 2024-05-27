@@ -15,6 +15,9 @@ body, html {
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+  .bgimg-1 .w3-display-middle {
+    top: 25%; /* Adjust this value as needed */
+  }
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
