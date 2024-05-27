@@ -6,6 +6,16 @@ body, html {
   line-height: 1.8;
 }
 
+
+/*style My Student Portfolio bg and text*/
+.highlight-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -22,7 +32,7 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
+  background-image: url("/w3images/parallax2.jp");
   min-height: 400px;
 }
 
