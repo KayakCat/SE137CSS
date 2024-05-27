@@ -27,3 +27,6 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+function scrollToSection() {
+    document.querySelector('#featured-project').scrollIntoView({ behavior: 'smooth' });
+}
