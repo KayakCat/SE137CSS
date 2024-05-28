@@ -19,6 +19,10 @@ body, html {
     top: 20%; /* Adjust this value as needed */
   }
 
+  .feedback-text {
+    font-size: 24px; /* Adjust the size as needed */
+  }
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
