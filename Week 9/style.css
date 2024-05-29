@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 body, html {
   height: 100%;
   color: black;
@@ -15,9 +15,18 @@ body, html {
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+
   .bgimg-1 .w3-display-middle {
     top: 20%; /* Adjust this value as needed */
   }
+  /* Ensure the container doesn't show a small black square */
+.w3-display-middle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    left: 50%;
+    top: 50%;
+}
 
   .feedback-text {
     font-size: 24px; /* Adjust the size as needed */
@@ -69,7 +78,10 @@ body, html {
     .w3-hide-small {
       display: none;
     }
+    .highlight-text {
+      background-color: transparent;
+    }
 
   }
-
+  
 }
