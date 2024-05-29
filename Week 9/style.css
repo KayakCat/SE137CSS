@@ -23,6 +23,11 @@ body, html {
     font-size: 24px; /* Adjust the size as needed */
   }
 
+  .linkedin-text {
+    font-size: 14px; /* Adjust the size as needed */
+    margin-left: 5px; /* Optional: Add some space between the icon and text */
+  }
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
